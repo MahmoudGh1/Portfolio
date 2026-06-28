@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mahmoud Gharib Portfolio</title>
+        <meta name="description" content="My name's Mahmoud Gharib. A Full Stack MERN Software engineer with Mechatronics Background.">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="../images/MG.svg" type="image/svg">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="Mahmoud Gharib Portfolio">
+        <meta property="og:description" content="My name's Mahmoud Gharib. A Full Stack MERN Software engineer with Mechatronics Background.">
+        <meta property="og:image" content="">
+        <meta property="og:image:alt" content="Mahmoud Gharib Live Image">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="Mahmoud Gharib Portfolio">
+
+        <!-- Google Font Family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="CursorSpotlight" id="cursorSpotlight" aria-hidden="true"></div>
+        <!-- -------------------- -->
+        <!-- -- Header Element -- -->
+        <!-- -------------------- -->
+        <header class="Page_Header">
+            <div class="brand">
+                <img src="../images/MG.svg" alt="Mahmoud Gharib brand Logo">
+                <a href="#">MahmoudGharib</a>
+            </div>
+            <nav class="mainNav" aria-label="Main Navigation Bar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#currently">Currently</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="toggle" aria-label="Dark/Light Toggle Switch">
+                <input type="checkbox" id="switch">
+                <label for="switch">toggle dark mode</label>
+                <div class="signature_Container">
+                    <!-- <img src="../images/Signature.svg" class="signature" alt="Author: Mahmoud Gharib Signature"> -->
+                     <span class="signature">Mahmoud</span>
+                </div>
+            </div>
+        </header>
+        <!-- ------------------ -->
+        <!-- -- Main Element -- -->
+        <!-- ------------------ -->
+        <main class="mainContainer">
+            <!-- -------------------------- -->
+            <!-- -- Hero Section Element -- -->
+            <!-- -------------------------- -->
+            <section class="hero_Section" id="home">
+                <p class="hero-TopNote">Designed by Mahmoud</p>
+                <h1 class="hero-title">
+                    Mahmoud <span class="fraun">Gharib</span><br>
+                    <span class="fraun">Full Stack</span> MERN Developer
+                </h1>
+                <p class="hero-Bottomnote">Trainee @ Information Technology Institute "ITI"</p>
+                <div class="hero-buttons">
+                    <button type="button" class="btn hero-Contact" onclick="goToContact()">Contact Me</button>
+                    <button type="button" class="btn hero-CV" onclick="downloadCV()">Download CV</button>
+                </div>
+                <div class="heroCustomNav_Container">
+                    <div class="hero-CustomNavigation" aria-label="Custom Navigation">
+                        <header class="CustomNav_Header">
+                            <div class="brand">
+                                <img src="../images/MG.svg" alt="Mahmoud Gharib Custom brand Logo">
+                            </div>
+                            <div class="userImage"></div>
+                        </header>
+                        <main class="CustomNav_Main">
+                            <aside class="CustomNav_mainAside">
+                                <ul>
+                                    <li><a href="#">Pages</a></li>
+                                    <li><a href="#">Layers</a></li>
+                                </ul>
+                                <hr>
+                                <div class="Hero_PagesAndLayers">
+                                    <button type="button" class="Layer" data-target="home">Home</button>
+                                    <button type="button" class="Layer" data-target="projects">Projects</button>
+                                    <button type="button" class="Layer" data-target="skills">Skills</button>
+                                    <button type="button" class="Layer" data-target="currently">Currently</button>
+                                    <button type="button" class="Layer" data-target="about">About</button>
+                                    <button type="button" class="Layer" data-target="contact">Contact</button>
+                                </div>
+                            </aside>
+                            <section class="Greeting_Section" id="figmaPreviewFrame">
+                                <!-- JS swaps this content per active page tab -->
+                                <div class="FigmaPreview FigmaPreview--idle" data-page="idle">
+                                    <p><span class="starIcon">✨</span> Hey, Session started.</p>
+                                    <p>Time to Count up during 2026.</p>
+                                </div>
+
+                                <!-- REPLACE: full-width screenshot of the Hero/Home section (top of page), captured in dark mode -->
+                                <div class="FigmaPreview" data-page="home">
+                                    <img src="../images/mock-home.png" alt="Home section preview" class="FigmaPreview_Img" data-section="home">
+                                    <span class="FigmaPreview_Label">Home</span>
+                                </div>
+
+                                <!-- REPLACE: screenshot of the Projects section showing the Screen panel + project list side by side -->
+                                <div class="FigmaPreview" data-page="projects">
+                                    <img src="../images/mock-projects.png" alt="Projects section preview" class="FigmaPreview_Img" data-section="projects">
+                                    <span class="FigmaPreview_Label">Projects</span>
+                                </div>
+
+                                <!-- REPLACE: screenshot of the Tech Stack / Skills grid section -->
+                                <div class="FigmaPreview" data-page="skills">
+                                    <img src="../images/mock-skills.png" alt="Skills section preview" class="FigmaPreview_Img" data-section="skills">
+                                    <span class="FigmaPreview_Label">Skills</span>
+                                </div>
+
+                                <!-- REPLACE: screenshot of the Currently section showing the ITI training timeline -->
+                                <div class="FigmaPreview" data-page="currently">
+                                    <img src="../images/mock-currently.png" alt="Currently section preview" class="FigmaPreview_Img" data-section="currently">
+                                    <span class="FigmaPreview_Label">Currently</span>
+                                </div>
+
+                                <!-- REPLACE: screenshot of the full About Me section with the profile card -->
+                                <div class="FigmaPreview" data-page="about">
+                                    <img src="../images/mock-about.png" alt="About section preview" class="FigmaPreview_Img" data-section="about">
+                                    <span class="FigmaPreview_Label">About</span>
+                                </div>
+
+                                <!-- REPLACE: screenshot of the Contact section with GitHub/LinkedIn cards -->
+                                <div class="FigmaPreview" data-page="contact">
+                                    <img src="../images/mock-contact.png" alt="Contact section preview" class="FigmaPreview_Img" data-section="contact">
+                                    <span class="FigmaPreview_Label">Contact</span>
+                                </div>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+            </section>
+            <!-- Full-screen zoom transition overlay (cloned image animates here before scrolling) -->
+            <div class="ZoomTransition" id="zoomTransition" aria-hidden="true">
+                <img src="" alt="" class="ZoomTransition_Img" id="zoomTransitionImg">
+            </div>
+            <!-- ----------------------------- -->
+            <!-- -- Aboutme Section Element -- -->
+            <!-- ----------------------------- -->
+            <section class="Aboutme_Section reveal">
+                <div class="aboutMe">
+                    <img src="../images/mahmoud.jpeg" alt="Mahmoud Gharib Live Image" width="60px" height="60px">
+                    <div class="basicData">
+                        <p>Hey, I'm <span class="dodgeText">Mahmoud</span> 🙋‍♂️</p>
+                        <p>A <span class="dodgeText">Full Stack MERN Software Engineer</span></p>
+                    </div>
+                </div>
+                <p class="DescriptionAboutMe">
+                    <span class="whiteBoldGlowText rightCheck" style="background-color: rgb(0, 98, 128);">&check;</span> I’m a <span class="whiteBoldGlowText">Full-Stack Software Engineer</span> with a strong engineering mindset and a background in <span class="whiteBoldGlowText">Mechatronics Engineering</span>.<br>
+                    <span class="whiteBoldGlowText rightCheck" style="background-color: rgb(128, 94, 0);">&check;</span> I build <span class="whiteBoldGlowText">well-structured</span>, <span class="whiteBoldGlowText">scalable web applications</span> by understanding systems end-to-end—from logic and data flow to performance and user experience.<br>
+                    <span class="whiteBoldGlowText rightCheck" style="background-color: rgb(128, 0, 43);">&check;</span> I focus on clean, maintainable code and turning complex problems into simple, reliable solutions.<br>
+                    <span class="whiteBoldGlowText rightCheck" style="background-color: rgb(0, 60, 128);">&check;</span> Currently, I’m building real-world projects using the <span class="whiteBoldGlowText">MERN stack</span>, driven by continuous learning and creating software that delivers real value.
+                </p>
+            </section>
+            <!-- -------------------------------- -->
+            <!-- -- TechSkills Section Element -- -->
+            <!-- -------------------------------- -->
+            <section class="TechSkills_Section" id="skills">
+                <section class="HowIThink_Section reveal">
+                    <h2>💭 How I Think As a <span class="fraun">Full-Stack SWE</span></h2>
+                    <ul>
+                        <li><span class="whiteBoldGlowText rightCheck" style="background-color: green;">&check;</span> I start by understanding the <span class="whiteBoldGlowText">problem, requirements, and constraints</span> before choosing technologies or writing code.</li>
+                        <li><span class="whiteBoldGlowText rightCheck" style="background-color: green;">&check;</span> I translate requirements into <span class="whiteBoldGlowText">clear system design</span>, documenting decisions to keep development structured and maintainable.</li>
+                        <li><span class="whiteBoldGlowText rightCheck" style="background-color: green;">&check;</span> I break complex features into <span class="whiteBoldGlowText">small, reusable, and testable components</span> with predictable data flow.</li>
+                        <li><span class="whiteBoldGlowText rightCheck" style="background-color: green;">&check;</span> I build with <span class="whiteBoldGlowText">performance, scalability, and accessibility</span> in mind, ensuring applications are usable by everyone.</li>
+                        <li><span class="whiteBoldGlowText rightCheck" style="background-color: green;">&check;</span> I prioritize <span class="whiteBoldGlowText">clean, readable, and well-documented code</span> over quick or clever solutions.</li>
+                        <li><span class="whiteBoldGlowText rightCheck" style="background-color: green;">&check;</span> I continuously <span class="whiteBoldGlowText">refactor and improve architecture</span> as the system evolves and new insights emerge.</li>
+                    </ul>
+                </section>
+                <section class="Skills_Section reveal">
+                    <h2>🧑‍💻 Tech Stack</h2>
+                    <ul class="Skills-Grid reveal reveal-stagger">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>BootStrap</li>
+                        <li>Git</li>
+                        <li>Figma</li>
+                        <li>TypeScript</li>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>SQL</li>
+                        <li>Angular.js</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </section>
+            </section>
+            <section class="scroll_Section">
+                <div class="scroll dodgeNew">
+                    <ul>
+                        <li>
+                            <span>#</span>
+                            <span class="blackSpan">Be</span>
+                            <span>The Best Version</span>
+                            <span class="blackSpan">Everyday.</span>
+                        </li>
+                        <li>
+                            <span> - </span>
+                        </li>
+                        <li>
+                            <span>#</span>
+                            <span class="blackSpan">Be</span>
+                            <span>Recognized at the place</span>
+                            <span class="blackSpan">you are in.</span>
+                        </li>
+                        <li>
+                            <span> - </span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span>#</span>
+                            <span class="blackSpan">Be</span>
+                            <span>The Best Version</span>
+                            <span class="blackSpan">Everyday.</span>
+                        </li>
+                        <li>
+                            <span> - </span>
+                        </li>
+                        <li>
+                            <span>#</span>
+                            <span class="blackSpan">Be</span>
+                            <span>Recognized at the place</span>
+                            <span class="blackSpan">you are in.</span>
+                        </li>
+                        <li>
+                            <span> - </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="scroll whiteNew">
+                    <ul>
+                        <li>
+                            <span class="redSpan">#</span>
+                            <span class="dodgeSpan">Be</span>
+                            <span>The Best Version</span>
+                            <span class="dodgeSpan">Everyday.</span>
+                        </li>
+                        <li>
+                            <span> - </span>
+                        </li>
+                        <li>
+                            <span class="redSpan">#</span>
+                            <span class="dodgeSpan">Be</span>
+                            <span>Recognized at the place</span>
+                            <span class="dodgeSpan">you are in.</span>
+                        </li>
+                        <li>
+                            <span> - </span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="redSpan">#</span>
+                            <span class="dodgeSpan">Be</span>
+                            <span>The Best Version</span>
+                            <span class="dodgeSpan">Everyday.</span>
+                        </li>
+                        <li>
+                            <span> - </span>
+                        </li>
+                        <li>
+                            <span class="redSpan">#</span>
+                            <span class="dodgeSpan">Be</span>
+                            <span>Recognized at the place</span>
+                            <span class="dodgeSpan">you are in.</span>
+                        </li>
+                        <li>
+                            <span> - </span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- ------------------------------ -->
+            <!-- -- Projects Section Element -- -->
+            <!-- ------------------------------ -->
+            <section class="Projects_Section" id="projects">
+                <div class="Screen reveal">
+                    <!-- JS fills this in on load and on project click -->
+                </div>
+                <section class="projects_List">
+                    <section class="Projects-Summary">
+                        <h2 class="projects-Header">Projects 🖥️</h2>
+                        <p class="Numberof-Projects">9</p>
+                    </section>
+                    <ul class="Listof_Projects reveal reveal-stagger">
+                        <li class="project project--featured" data-img="supportnest.png"
+                            data-role="Full Stack TypeScript + System Architect"
+                            data-github="https://github.com/MahmoudGh1"
+                            data-description="Architected a multi-tenant B2B SaaS customer-support platform with strict tenant data isolation, using Prisma over PostgreSQL to enforce relational integrity and row-level scoping."
+                            data-points="Engineered a multi-agent AI pipeline (Reporter, Router, Tier 0 RAG, Tier 1 tool-using agent) orchestrated with LangChain and Google Gemini, combining pgvector retrieval with Redis-cached conversation memory for low-latency, context-aware responses.|Designed a Tool Extractor Agent that parses Swagger/OpenAPI specs and PDF docs to dynamically generate callable tools for the AI layer, removing manual integration work for new clients.|Integrated Paymob billing with asynchronous payment callback handling via BullMQ, deployed on Railway with hardened CORS policies across multi-tenant origins.">
+                            <p>SupportNest <span class="featuredTag">Featured</span></p>
+                            <ul class="techStack">
+                                <li class="Node.js">Node.js</li>
+                                <li class="Js_tech">TypeScript</li>
+                                <li class="MongoDB">PostgreSQL</li>
+                                <li class="API_tech">LangChain</li>
+                                <li class="API_tech">Gemini</li>
+                            </ul>
+                        </li>
+                        <li class="project project--featured" data-img="stacktrace.png"
+                            data-role="Full Stack TypeScript + System Architect"
+                            data-github="https://github.com/MahmoudGh1"
+                            data-description="Architected a scalable Modular Monolith backend with domain-driven design, cleanly decoupling core business logic from UI rendering and third-party AI interfaces."
+                            data-points="Engineered an asynchronous orchestration engine using BullMQ and Redis to manage background jobs, cron scheduling, email queues, and real-time session expiration tracking.|Integrated the Monaco Editor into a distraction-free split-screen testing environment with full syntax highlighting for a premium coding experience.|Implemented a strict Finite State Machine across frontend and backend to manage session lifecycles, enforcing 3-hour response windows and real-time validation.|Developed decoupled AI adapter abstractions with the Factory pattern, using custom leak-detector guardrails and Zod schema validation for strict interview compliance.">
+                            <p>StackTrace AI Coach <span class="featuredTag">Featured</span></p>
+                            <ul class="techStack">
+                                <li class="Node.js">Node.js</li>
+                                <li class="Js_tech">TypeScript</li>
+                                <li class="MongoDB">MongoDB</li>
+                                <li class="API_tech">Redis</li>
+                                <li class="API_tech">Gemini</li>
+                            </ul>
+                        </li>
+                        <li class="project project--featured" data-img="gunuo.png"
+                            data-role="Full Stack TypeScript"
+                            data-github="https://github.com/MahmoudGh1"
+                            data-description="Architected a decoupled, full-stack luxury e-commerce platform using React for the presentation layer and a TypeScript Express REST API to enforce strict compile-time type safety."
+                            data-points="Designed a secure hybrid dual-authentication middleware system supporting JWT for customer sessions alongside custom cryptographically secure API keys generated via an integrated developer control panel.|Engineered responsive transactional CRUD pipelines in Node.js backed by a structured MongoDB layer via Mongoose, handling real-time writes, data isolation, and order document purges.">
+                            <p>Gunuo Management <span class="featuredTag">Featured</span></p>
+                            <ul class="techStack">
+                                <li class="Node.js">Node.js</li>
+                                <li class="Js_tech">TypeScript</li>
+                                <li class="MongoDB">MongoDB</li>
+                                <li class="API_tech">React</li>
+                            </ul>
+                        </li>
+                        <li class="projects_Divider"><span>Practice Projects</span></li>
+                        <li class="project" data-img="weather.png"
+                            data-description="A practice project built while learning to consume third-party weather APIs and handle asynchronous data in vanilla JavaScript.">
+                            <p>Weather App</p>
+                            <ul class="techStack">
+                                <li class="HTML_tech">HTML</li>
+                                <li class="CSS_tech">CSS</li>
+                                <li class="Js_tech">JavaScript</li>
+                                <li class="API_tech">API</li>
+                            </ul>
+                        </li>
+                        <li class="project" data-img="studentDashboard.png"
+                            data-description="A CRUD-style dashboard used to practice DOM manipulation and list rendering patterns in plain JavaScript.">
+                            <p>Student Dashboard List</p>
+                            <ul class="techStack">
+                                <li class="HTML_tech">HTML</li>
+                                <li class="CSS_tech">CSS</li>
+                                <li class="Js_tech">JavaScript</li>
+                            </ul>
+                        </li>
+                        <li class="project" data-img="quiz.png"
+                            data-description="An interactive quiz app built to practice state handling and scoring logic in vanilla JavaScript.">
+                            <p>Quiz App</p>
+                            <ul class="techStack">
+                                <li class="HTML_tech">HTML</li>
+                                <li class="CSS_tech">CSS</li>
+                                <li class="Js_tech">JavaScript</li>
+                            </ul>
+                        </li>
+                        <li class="project" data-img="Heya.png"
+                            data-description="A real-time chat app built to practice WebSocket communication with Socket.io on top of a Node.js and MongoDB backend.">
+                            <p>Heya Realtime Chat App</p>
+                            <ul class="techStack">
+                                <li class="HTML_tech">HTML</li>
+                                <li class="CSS_tech">CSS</li>
+                                <li class="Js_tech">JavaScript</li>
+                                <li class="MongoDB">MongoDB</li>
+                                <li class="Node.js">Node.JS</li>
+                                <li class="Socket.io">Socket.io</li>
+                            </ul>
+                        </li>
+                        <li class="project" data-img="SouqPro.png"
+                            data-description="An e-commerce practice build covering product listings, cart logic, and a Node.js/MongoDB backend.">
+                            <p>SouqPro E-Commerce</p>
+                            <ul class="techStack">
+                                <li class="HTML_tech">HTML</li>
+                                <li class="CSS_tech">CSS</li>
+                                <li class="Js_tech">JavaScript</li>
+                                <li class="MongoDB">MongoDB</li>
+                                <li class="Node.js">Node.JS</li>
+                            </ul>
+                        </li>
+                        <li class="project" data-img="chargeUp.png"
+                            data-description="A game-currency charging UI built to practice API integration and checkout-style flows.">
+                            <p>PUBG UC Charge</p>
+                            <ul class="techStack">
+                                <li class="HTML_tech">HTML</li>
+                                <li class="CSS_tech">CSS</li>
+                                <li class="Js_tech">JavaScript</li>
+                                <li class="API_tech">API</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <!-- Project detail modal: opens when the preview image inside .Screen is clicked -->
+            <div class="ProjectModal" id="projectModal" aria-hidden="true">
+                <div class="ProjectModal_Backdrop" id="projectModalBackdrop"></div>
+                <div class="ProjectModal_Card" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+                    <header class="ProjectModal_Header">
+                        <div class="ProjectModal_Bar">
+                            <span class="screen-preview__dot red"></span>
+                            <span class="screen-preview__dot yellow"></span>
+                            <span class="screen-preview__dot green"></span>
+                        </div>
+                        <button type="button" class="ProjectModal_Close" id="projectModalClose" aria-label="Close project details">&times;</button>
+                    </header>
+                    <div class="ProjectModal_Scroll">
+                        <img src="" alt="" class="ProjectModal_Img" id="projectModalImg">
+                        <div class="ProjectModal_Body">
+                            <p class="ProjectModal_Role" id="projectModalRole"></p>
+                            <h3 class="ProjectModal_Title" id="projectModalTitle"></h3>
+                            <ul class="ProjectModal_Tech techStack" id="projectModalTech"></ul>
+                            <p class="ProjectModal_Description" id="projectModalDescription"></p>
+                            <ul class="ProjectModal_Points" id="projectModalPoints"></ul>
+                            <a href="#" target="_blank" rel="noopener" class="ProjectModal_GithubLink" id="projectModalGithub">
+                                <i class="fa-brands fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------- -->
+            <!-- -- Currently Section Element -- -->
+            <!-- ------------------------------- -->
+            <section class="Currently_Section" id="currently">
+                <div class="Currently_Header">
+                    <p>🚩 <span class="CurrentlySpan">Currently</span>, I'm building a <span style="color: rgb(189, 26, 26);"> School Management System</span> for a client</p>
+                    <p>29-04-2026 - Present</p>
+                </div>
+                <section class="Activities reveal">
+                    <h3>What I'm building:</h3>
+                    <ul>
+                        <li><span class="whiteBoldGlowText rightCheck" style="background-color: green;">&check;</span> Architecting and building a full-stack <span class="zigzag">School Management System</span> end-to-end for a client — covering both a Next.js 15 frontend and a Node.js/Express REST API backend.</li>
+                        <li><span class="whiteBoldGlowText rightCheck" style="background-color: green;">&check;</span> Role-based dashboards for <span class="zigzag">five roles</span> (superadmin, admin, teacher, student, parent) enforced across both the frontend and backend via a dedicated <span class="zigzag">RBAC</span> layer.</li>
+                        <li><span class="whiteBoldGlowText rightCheck" style="background-color: green;">&check;</span> Secure <span class="zigzag">JWT authentication</span> with httpOnly cookies, refresh token rotation, and role-based route protection handled server-side in both Next.js middleware and Express guards.</li>
+                        <li><span class="whiteBoldGlowText rightCheck" style="background-color: green;">&check;</span> A <span class="zigzag">PostgreSQL</span> database with a carefully designed schema using <span class="zigzag">Prisma ORM</span> — modelling complex academic relationships across users, roles, classes, grades, and more.</li>
+                        <li><span class="whiteBoldGlowText rightCheck" style="background-color: green;">&check;</span> Backend features including <span class="zigzag">file uploads</span>, <span class="zigzag">email notifications</span>, and a <span class="zigzag">reporting & analytics</span> module surfaced through a clean REST API consumed by TanStack Query on the frontend.</li>
+                        <li><span class="whiteBoldGlowText rightCheck" style="background-color: green;">&check;</span> Bilingual <span class="zigzag">English/Arabic</span> interface with full RTL support via next-intl.</li>
+                        <li><span class="whiteBoldGlowText rightCheck" style="background-color: green;">&check;</span> A layered frontend architecture (apiClient → API layer → query hooks → components) with <span class="zigzag">TanStack Query</span> and <span class="zigzag">Zustand</span>, and type-safe forms via <span class="zigzag">React Hook Form</span> and <span class="zigzag">Zod</span>.</li>
+                        <li><span class="whiteBoldGlowText rightCheck" style="background-color: green;">&check;</span> Currently Working on the <span class="zigzag">Dashboard Page</span>.</li>
+                    </ul>
+                </section>
+            </section>
+            <!-- ------------------------------- -->
+            <!-- -- About Me Section Element  -- -->
+            <!-- ------------------------------- -->
+            <section class="AboutFull_Section" id="about">
+                <div class="AboutFull_Left">
+                    <p class="Services_Tag">The Story So Far</p>
+                    <h2>👤 About <span class="fraun">Me</span></h2>
+                    <p class="AboutFull_Intro">
+                        I didn't start as a developer. I started as an engineer who <span class="whiteBoldGlowText">needed to understand how things work</span> — all the way down.
+                    </p>
+                    <div class="AboutFull_Body reveal reveal-stagger">
+                        <div class="About_Block">
+                            <span class="whiteBoldGlowText rightCheck" style="background-color: rgb(0, 98, 128);">&check;</span>
+                            <p><span class="whiteBoldGlowText">Engineering Roots.</span> My background is Mechatronics Engineering where electronics, mechanics, and software intersect. That gave me a systems-level mindset before I ever wrote a line of web code. I think in flows, components, and edge cases naturally.</p>
+                        </div>
+                        <div class="About_Block">
+                            <span class="whiteBoldGlowText rightCheck" style="background-color: rgb(128, 94, 0);">&check;</span>
+                            <p><span class="whiteBoldGlowText">The Shift.</span> I moved into software because I saw it as the most powerful layer of any system. A great product isn't just functional it's felt. I wanted to build those products. So I joined ITI's highly competitive MEA|RN Stack & Generative AI program, earning a full scholarship out of thousands of applicants.</p>
+                        </div>
+                        <div class="About_Block">
+                            <span class="whiteBoldGlowText rightCheck" style="background-color: rgb(128, 0, 43);">&check;</span>
+                            <p><span class="whiteBoldGlowText">What Drives Me.</span> I build things that matter to real people. Not just apps experiences. I've built personalized birthday websites for close friends where every design decision was intentional. That same care goes into every project I take on professionally.</p>
+                        </div>
+                        <div class="About_Block">
+                            <span class="whiteBoldGlowText rightCheck" style="background-color: rgb(0, 60, 128);">&check;</span>
+                            <p><span class="whiteBoldGlowText">My Standard.</span> I don't copy-paste solutions I don't understand. I read docs, I go deep, and I don't ship code I can't explain. Clean, maintainable, and honest that's the standard I hold myself to.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="AboutFull_Right">
+                    <div class="AboutFull_Card">
+                        <img src="../images/mahmoud.jpeg" alt="Mahmoud Gharib" class="AboutFull_Img">
+                        <div class="AboutFull_Meta">
+                            <p class="AboutFull_Name">Mahmoud Gharib</p>
+                            <p class="AboutFull_Role"><span class="fraun">Full Stack</span> MERN Developer</p>
+                        </div>
+                        <div class="AboutFull_Tags">
+                            <span class="AboutTag">Mechatronics</span>
+                            <span class="AboutTag">Egypt 🇪🇬</span>
+                            <span class="AboutTag">ITI Trainee</span>
+                            <span class="AboutTag">Systems Thinker</span>
+                            <span class="AboutTag">Clean Code</span>
+                            <span class="AboutTag">Open to Work</span>
+                        </div>
+                    </div>
+                    <div class="AboutFull_Quote">
+                        <p>"Be recognized at the place you are in."</p>
+                    </div>
+                </div>
+            </section>
+            <!-- ------------------------------- -->
+            <!-- -- ContactMe Section Element -- -->
+            <!-- ------------------------------- -->
+            <section class="ContactMe_Section reveal" id="contact">
+                <section class="contactMe_Header">
+                    <h2>Lets talk with each other 🫶</h2>
+                    <p><span class="wavyLine">Diverse Perspectives</span> = <span class="wavyLine">Great Skills & Ideas</span></p>
+                </section>
+                <section class="contact">
+                    <section class="contactPlatform">
+                        <h3>Github</h3>
+                        <p>@MahmoudGharib1</p>
+                        <button onclick="viewMyGithub()">View my Github</button>
+                    </section>
+                    <section class="contactPlatform">
+                        <h3>LinkedIn</h3>
+                        <p>Mahmoud Gharib</p>
+                        <button onclick="viewMyLinkedIn()">Lets Connect</button>
+                    </section>
+                </section>
+            </section>
+            <div class="proudBar">
+                <span>#</span>
+                <span class="dodgeColor">Proud</span>
+                <span>To Say that i am an</span>
+                <span class="dodgeColor">Egyptian Citizen.</span>
+            </div>
+        </main>
+        <!-- -------------------- -->
+        <!-- -- Footer Element -- -->
+        <!-- -------------------- -->
+        <footer>
+            <section class="info">
+                <h3>Mahmoud Gharib Mahmoud</h3>
+                <p class="Location-based"> Based in <span class="Egypt-Color">Egypt</span></p>
+                <p class="copyRight">&copy; <span id="yearOfRights">2026</span> Mahmoud Gharib. All Rights are Reserved.</p>
+            </section>
+            <!-- <section class="Note">
+                <h3 class="Note-BytheWay">Note</h3>
+                <p class="Relationship">in a Relationship! I am Loyal to a queen &hearts;.</p>
+            </section> -->
+        </footer>
+        <script src="script.js" defer></script>
+    </body>
+</html>
